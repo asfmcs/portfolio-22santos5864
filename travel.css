@@ -1,0 +1,21 @@
+body {
+  background-color:rgba(89, 198, 218, 0.884);
+}
+.rising-sun {
+  color:rgb(185, 0, 9);
+  
+}
+h2 {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+h3 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+ul {
+ color:rgb(185, 0, 9); 
+}
+ol {
+   color:rgb(185, 0, 9); 
+}

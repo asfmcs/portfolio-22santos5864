@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(245, 245, 220)
+}
+
+#CSS {
+ font-family: Sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#HTML {
+  font-family:Sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#title {
+   font-size: 50px;
+}
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+//With W3 code I found out how to make text shadows, and they look pretty cool.
