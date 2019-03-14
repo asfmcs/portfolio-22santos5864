@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(245, 245, 220);
+}
+//I really like how this beige color makes the background look.
+th {
+  background-color: #4CAF50;
+  color: white;
+   border-bottom: 1px solid #ddd;
+}
+ol{
+  color: rgb(138, 106, 0)
+}
+td{
+  border-bottom: 1px solid #ddd;
+}
