@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Gold Medal</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/ec071a764d83f34910ba21fab0b0f0cc20293542/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Gold Medal</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    function start(){
+ 
+  var rect1 = new Rectangle(50, 150);
+    rect1.setPosition(65, 115);
+    add(rect1);
+    rect1.setRotation(4,0);
+    var rect2 = new Rectangle(50, 150);
+    rect2.setPosition(275, 115);
+    add(rect2);
+    rect2.setRotation(4,0);
+    var rect3 = new Rectangle(50, 150);
+    rect3.setPosition(170, 115);
+    add(rect3);
+    rect3.setRotation(4,0);
+    var gold = new Circle(50);
+    gold.setPosition(80,300);
+    gold.setColor(Color.yellow);
+    add(gold);
+     var Silver = new Circle(50);
+    Silver.setPosition(185,300);
+    Silver.setColor("#C0C0C0");
+    add(Silver);
+     var Bronze = new Circle(50);
+    Bronze.setPosition(290,300);
+    Bronze.setColor("#cd7f32");
+    add(Bronze);
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
