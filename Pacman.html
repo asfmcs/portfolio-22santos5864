@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Pacmanu</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/ec071a764d83f34910ba21fab0b0f0cc20293542/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Pacmanu</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    
+function start (){
+  var Back = new Rectangle(500, 500);
+    Back.setColor(Color.black);
+    Back.setPosition(0, 0);
+    add(Back);
+    var Blue = new Rectangle(230, 230);
+    Blue.setColor(Color.blue);
+    Blue.setPosition(0, 0);
+    add(Blue);
+    var line = new Line(225, 80, 225, 150);
+    line.setColor(Color.white);
+    line.setLineWidth(9);
+    add(line);
+     var Blacky = new Rectangle(220, 220);
+    Blacky.setColor(Color.black);
+   Blacky.setPosition(5, 5);
+    add(Blacky);
+    drawGhost(25, 50, Color.red);
+    drawGhost(25, 150, "#FFB6C1");
+    drawGhost(125, 50, Color.orange);
+    drawGhost(125, 150, "#4dffff");
+   var X = 100;
+    var Y = 350;
+    drawPacman(X, Y);
+
+
+}
+
+
+function drawGhost(centerX, centerY, color){
+   
+  
+    var W = 70;
+    var L = 50;
+    var rect = new Rectangle(W, L);
+    rect.setColor(color);
+    rect.setPosition(centerX, centerY);
+    add(rect);
+    var circle = new Circle(35);
+    circle.setPosition(centerX + 35, centerY);
+    circle.setColor(color);
+    add(circle);
+    var F1 = new Circle(12);
+    F1.setPosition(centerX + 12, centerY + 50);
+    F1.setColor(color);
+    add(F1);
+    var F2 = new Circle(12);
+    F2.setPosition(centerX + 35, centerY + 50);
+    F2.setColor(color);
+    add(F2);
+    var F3 = new Circle(12);
+    F3.setPosition(centerX + 58, centerY + 50);
+    F3.setColor(color);
+    add(F3);
+    var E1 = new Circle(11);
+    E1.setPosition(centerX + 20, centerY + 10);
+    E1.setColor(Color.white);
+    add(E1);
+    var E2 = new Circle(11);
+    E2.setPosition(centerX + 50, centerY + 10);
+    E2.setColor(Color.white);
+    add(E2);
+    var E3 = new Circle(5);
+    E3.setPosition(centerX + 55, centerY + 10);
+    E3.setColor(Color.blue);
+    add(E3);
+    var E4 = new Circle(5);
+    E4.setPosition(centerX + 25, centerY + 10);
+    E4.setColor(Color.blue);
+    add(E4);
+    
+}
+
+function drawPacman(X, Y){
+   
+  
+    var Pac = new Circle(75);
+    Pac.setPosition(X, Y);
+    Pac.setColor(Color.yellow);
+    add(Pac);
+var rect = new Rectangle(100, 100);
+rect.setPosition(X + 30, Y - 50);
+rect.setColor(Color.black);
+rect.rotate(45, 0); 
+add(rect);
+var Eye = new Circle(9);
+Eye.setPosition(X + 15, Y - 45);
+Eye.setColor(Color.black);
+add(Eye);
+var B1 = new Circle(15);
+B1.setPosition(X + 60, Y);
+B1.setColor(Color.yellow);
+add(B1);
+var B3 = new Circle(15);
+B3.setPosition(X + 100, Y);
+B3.setColor(Color.yellow);
+add(B3);
+var B2 = new Circle(15);
+B2.setPosition(X + 140, Y);
+B2.setColor(Color.yellow);
+add(B2);
+ var BB1 = new Circle(15);
+BB1.setPosition(X + 180, Y);
+BB1.setColor(Color.yellow);
+add(BB1);
+var BB2 = new Circle(15);
+BB2.setPosition(X + 180, Y - 40);
+BB2.setColor(Color.yellow);
+add(BB2);
+var BB3 = new Circle(15);
+BB3.setPosition(X + 180, Y - 80);
+BB3.setColor(Color.yellow);
+add(BB3);
+var BB4 = new Circle(15);
+BB4.setPosition(X + 180, Y - 120);
+BB4.setColor(Color.yellow);
+add(BB4);
+var BB5 = new Circle(15);
+BB5.setPosition(X + 180, Y - 160);
+BB5.setColor(Color.yellow);
+add(BB5);
+var BB6 = new Circle(15);
+BB6.setPosition(X + 180, Y - 200);
+BB6.setColor(Color.yellow);
+add(BB6);
+var BB7 = new Circle(15);
+BB7.setPosition(X + 180, Y - 240);
+BB7.setColor(Color.yellow);
+add(BB7);
+var BB8 = new Circle(15);
+BB8.setPosition(X + 180, Y - 280);
+BB8.setColor(Color.yellow);
+add(BB8);
+var BB9 = new Circle(15);
+BB9.setPosition(X + 180, Y - 320);
+BB9.setColor(Color.yellow);
+add(BB9);
+var BB10 = new Circle(15);
+BB10.setPosition(X + 180, Y - 360);
+BB10.setColor(Color.yellow);
+add(BB10);
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
